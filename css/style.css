@@ -69,7 +69,13 @@ margin: 0;
     padding-top: 94px;
     
 }
+.clients-title{
 
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-top:94px;
+    text-align: center;
+}
 
 
 
@@ -340,29 +346,50 @@ background-color: var(--accent-color-2);}
   
    .img2:not(:last-child) {
         margin-right: 15px;}
-.clients{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-    width: 1200px;
-    padding-bottom: 94px;
-    
 
+
+.clients{
+   padding-bottom: 94px;
      
 }
-        .our-client {
-            display: inline-block;
-            width: 170px;
-            height: 90px;
-            border: 1px solid #AFB1B8;
-            box-sizing: border-box;
-            border-radius: 4px;     
-            justify-content: center; 
-            margin-right: 15px;  }
+       .client{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+    width: 1200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+           }
+
+            .our-client {
+                width: 170px;
+                height: 90px;
+                
+                display: inline-block;  
+                border: 1px solid #AFB1B8;
+                box-sizing: border-box;
+                border-radius: 4px;
+                margin-right: 15px;
+                   }
        
-       ul .our-client:not(:last-child) {
-            margin-right: 15px;}
-            
+           .our-client:last-child {
+            margin-right: 0px;}
+
+            .yaCo,
+            .company1,
+            .company2,
+            .company3,
+            .brand,
+            .company5 {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 20px;                         
+            }
+
   /*display: inline-block;
    text-align: center;
    background-repeat: repeat-x ;
@@ -385,9 +412,7 @@ background-color: var(--accent-color-2);}
        line-height: 1.19;
        letter-spacing: 0.03em;
        text-align: center;
-
-
-       
+   
 
     }
    
@@ -457,8 +482,7 @@ background-color: var(--accent-color-2);}
     width: 370px;
     margin: 15px;
     border: 1px solid #F5F4FA;
-    ;
-  }
+      }
 
 .img-portfolio:nth-child(3n) {
 margin-right: 0px;
@@ -467,6 +491,11 @@ margin-right: 0px;
 .img-portfolio:nth-last-child(-n + 3) {
     margin-bottom: 0px;
     }
+
+.img-portfolio:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+     1px 4px 6px rgba(0, 0, 0, 0.16);}
 
 ul > .product-name {
     font-size: 18px;
