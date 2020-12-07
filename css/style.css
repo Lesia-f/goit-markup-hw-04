@@ -134,7 +134,7 @@ margin: 0;
  .address {
    margin-left: auto;  
    font-style: normal;
-   
+     
  }
 
 .nav-tel:hover ,
@@ -385,22 +385,28 @@ background-color: var(--accent-color-2);}
             .brand,
             .company5 {
                 display: block;
+                
                 margin-right: auto;
                 margin-left: auto;
                 margin-top: 20px;                         
             }
+.social{
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-bottom: 30px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  .social-links {
+width: 20px;
+height: 20px;
+fill: #AFB1B8;
+  }
 
-  /*display: inline-block;
-   text-align: center;
-   background-repeat: repeat-x ;
-   background-image: url(../images/icons/instagram.svg),
-  url(../images/icons/twitter.svg),
-  url(../images/icons/facebook.svg),
-  url(../images/icons/linkedin.svg);
-
-
-}*/
-
+  .social-links:hover {
+  fill:  #FFFFFF;
+ }
 
       
   .team  {
@@ -528,16 +534,40 @@ footer {
    padding-top: 60px;
    padding-bottom: 60px;
     }
- 
+    .social-container {
+        display: inline-block;
+        width: 206px;
+        height: 80px;
+    }
+
+    .social-title {
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+padding-bottom: 20px;    }
+
+
  .logo-footer {
     color: var(--accent-color-2);
-    display: inline;
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: 26px; 
     font-weight: 700; 
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-left: 0px;
+
  }
+ .logo { display: flex;
+    width: 145px;
+    margin-left: 0px;
+}
 a.nav {
     margin-bottom: 9px;
     margin-top: 9px;
@@ -545,11 +575,14 @@ a.nav {
  .map {
  color: var(--accent-color-2);
  margin-top: 20px;
-
+display: inline-block;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 1.7;
 letter-spacing: 0.03em;
 text-align: left;
+width:231px;
+margin-right: 0px;
+justify-content: flex-start; 
 }
