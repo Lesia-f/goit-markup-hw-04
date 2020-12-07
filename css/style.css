@@ -39,7 +39,7 @@ font-size: 26px;
 font-weight: 700;
 line-height: 1.19;
 letter-spacing: 0.03em;
-display: block;
+display: inline-block;
 }
 
 .logo-studio {
@@ -140,26 +140,30 @@ margin: 0;
  .icon-mail {
      width: 16px;
      height: 12px;
-     padding: 0;
      margin-right: 10px;
-     fill: #757575;
-
-   
+     fill: var(--primary-text-color);
+     display: inline-block;
+  
  }
+
+
  .icon-tel {
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    fill: #757575;
+    fill: var(--primary-text-color);
+    display: flex;
 }
 
- .icon-mail:hover ,
- .icon-tel:hover , 
- .icon-mail:focus ,
- .icon-tel:focus  {
-    fill:var(--accent-color);
- }
+.icon-tel:hover ,
+.icon-mail:hover ,
+.icon-tel:focus ,
+.icon-mail:focus {
+    color:var(--accent-color);}
 
+.icons {
+width: 161px;
+}
 
 .nav-tel:hover ,
 .nav-mail:hover ,
@@ -366,7 +370,7 @@ text-align: left;
       }
 
 .img2 {
-   border: 1px solid #F5F4FA;
+   border: 1px solid var(--background-color-2);
 border-top-left-radius: 0px;
 border-top-right-radius: 0px;
 border-bottom-right-radius: 4px;
@@ -411,39 +415,135 @@ background-color: var(--accent-color-2);}
            .our-client:last-child {
             margin-right: 0px;}
 
+        .yaCo {
+         width: 45px;
+        height: 50px;
+         }
+         .company2 {
+            width: 40px;
+            height: 52px;
+          }
+
+         .company3 { width: 41px;
+            height: 43px;}
+
+         .company4 {width: 80px;
+            height: 42px;
+
+         }
+         .company6 {width: 88px;
+            height: 45px;
+
+         }
+        .brand {width: 59px;
+            height: 47px;
+
+        }
             .yaCo,
-            .company1,
             .company2,
             .company3,
+            .company4,
             .brand,
-            .company5 {
+            .company6 {
                 display: block;
-                
                 margin-right: auto;
                 margin-left: auto;
-                margin-top: 20px;                         
+                margin-top: 20px;  
+                fill: #AFB1B8;
+                       
             }
+            .yaCo:hover ,
+            .company2:hover ,
+            .company3:hover ,
+            .company4:hover ,
+            .brand:hover ,
+            .company6:hover {
+                fill: var(--accent-color);
+            }
+
+           /* .our-client:hover {
+               color: #2196F3;}*/
+
 .social{
+    display:inline-block;
     margin-right: 32px;
     margin-left: 32px;
     margin-bottom: 30px;
-    display:flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+     width: 206px;
+     
 }
-  .social-links {
-width: 20px;
-height: 20px;
-fill: #AFB1B8;
-  }
-
+ .social-links {
+width: 44px;
+height: 44px;
+fill: #AFB1B8; }
+  
   .social-links:hover {
-  fill:  #FFFFFF;
+  fill:  var(--accent-color-2);
  }
 
+ .social-links-insta  {
+     display: inline-flex;
+     flex-direction: row;
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/icons/instagram11.svg);  
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+     }
+     .social-links-insta:hover ,
+     .social-links-twitter:hover ,
+     .social-links-facebook:hover ,
+     .social-links-linki:hover {
+        background-color: var(--accent-color);
+     }
+
+     .social-links-twitter{
+        display: inline-flex;
+        flex-direction: row;
+       width: 44px;
+       height: 44px;
+       background-image: url(../images/icons/twitter22.svg);  
+       background-color: rgba(255, 255, 255, 0.1);
+       border-radius: 50%;
+       background-size: 20px;
+       background-position: center;
+       background-repeat: no-repeat; }
+
+.social-links-facebook {
+    display: inline-flex;
+        flex-direction: row;
+       width: 44px;
+       height: 44px;
+       background-image: url(../images/icons/facebook33.svg);  
+       background-color: rgba(255, 255, 255, 0.1);
+       border-radius: 50%;
+       background-size: 20px;
+       background-position: center;
+       background-repeat: no-repeat;
+}
+   
+.social-links-linki {
+    display: inline-flex;
+        flex-direction: row;
+       width: 44px;
+       height: 44px;
+       background-image: url(../images/icons/linkedin44.svg);  
+       background-color: rgba(255, 255, 255, 0.1);
+       border-radius: 50%;
+       background-size: 20px;
+       background-position: center;
+       background-repeat: no-repeat;
+}
+
+
+ 
       
   .team  {
-       color:var(--title-text-color);  
+       color: var(--title-text-color);  
        margin-top: 30px;
        margin-bottom: 10px;
        font-size: 16px;
@@ -451,9 +551,7 @@ fill: #AFB1B8;
        line-height: 1.19;
        letter-spacing: 0.03em;
        text-align: center;
-   
-
-    }
+       }
    
      .position {
         color:var(--primary-text-color);
@@ -571,10 +669,11 @@ footer {
         display: inline-block;
         width: 206px;
         height: 80px;
+        margin-left: 70px;
     }
 
     .social-title {
-color: #FFFFFF;
+color: var(--accent-color-2);
 text-align: center;
 text-transform: uppercase;
 font-family: Roboto;
@@ -583,12 +682,15 @@ font-weight: 700;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.03em;
-padding-bottom: 20px;    }
+padding-bottom: 20px;
+padding-right: 61px;
+margin: 0px;  
+ }
 
 
   .logo-footer {
     color: var(--accent-color-2);
-    display: block;
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: 26px; 
     font-weight: 700; 
@@ -616,16 +718,17 @@ width:231px;
 margin-right: 0px;
 justify-content: flex-start; 
 }
-
+.web {
+    display: inline-flex;
+    
+    flex-direction:  column;
+}
 .footer-block{
     display: flex;
 }
-.container footer  {
-   margin-left: auto;
-   margin-right: auto;
-   padding: 0 15px;
-   width: 1200px;
+footer .container {
    display: flex;
-   align-items:baseline;
-    
-}
+   align-items:baseline;}
+
+
+ 
