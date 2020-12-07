@@ -367,14 +367,14 @@ background-color: var(--accent-color-2);}
             .our-client {
                 width: 170px;
                 height: 90px;
-                
                 display: inline-block;  
                 border: 1px solid #AFB1B8;
                 box-sizing: border-box;
                 border-radius: 4px;
                 margin-right: 15px;
                    }
-       
+        
+
            .our-client:last-child {
             margin-right: 0px;}
 
@@ -541,10 +541,10 @@ footer {
     }
 
     .social-title {
-        color: #FFFFFF;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: Roboto;
+color: #FFFFFF;
+text-align: center;
+text-transform: uppercase;
+font-family: Roboto;
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
@@ -564,7 +564,8 @@ padding-bottom: 20px;    }
     margin-left: 0px;
 
  }
- .logo { display: flex;
+ .web { 
+     display: inline-block;
     width: 145px;
     margin-left: 0px;
 }
@@ -585,4 +586,12 @@ text-align: left;
 width:231px;
 margin-right: 0px;
 justify-content: flex-start; 
+}
+
+    
+.container footer {
+    display: flex;
+align-items: center;
+align-items:baseline;
+    flex-direction: row;
 }
