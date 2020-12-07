@@ -562,12 +562,12 @@ padding-bottom: 20px;    }
     line-height: 1.19;
     letter-spacing: 0.03em;
     margin-left: 0px;
-
  }
- .web { 
+ 
+ .logo .logo-footer  { 
      display: inline-block;
     width: 145px;
-    margin-left: 0px;
+   
 }
 a.nav {
     margin-bottom: 9px;
