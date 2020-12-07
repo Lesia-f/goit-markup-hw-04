@@ -39,6 +39,7 @@ font-size: 26px;
 font-weight: 700;
 line-height: 1.19;
 letter-spacing: 0.03em;
+display: block;
 }
 
 .logo-studio {
@@ -148,7 +149,7 @@ display: flex;
 align-items: center;
 }
 
-.nav-mail::before {
+/*.nav-mail::before {
     content:"";
     align-self: flex-end;
     display: inline-block;
@@ -168,8 +169,7 @@ align-items: center;
     height: 16px;
     background-image: url(../images/icons/Vector.png);
     background-size: contain;
-
-}
+    }*/
 
 
 .specifity-container {
@@ -553,9 +553,9 @@ letter-spacing: 0.03em;
 padding-bottom: 20px;    }
 
 
- .logo-footer {
+  .logo-footer {
     color: var(--accent-color-2);
-    display: inline-block;
+    display: block;
     font-family: 'Raleway', sans-serif;
     font-size: 26px; 
     font-weight: 700; 
@@ -563,12 +563,8 @@ padding-bottom: 20px;    }
     letter-spacing: 0.03em;
     margin-left: 0px;
  }
+
  
- .logo .logo-footer  { 
-     display: inline-block;
-    width: 145px;
-   
-}
 a.nav {
     margin-bottom: 9px;
     margin-top: 9px;
@@ -589,9 +585,12 @@ justify-content: flex-start;
 }
 
     
-.container footer {
-    display: flex;
-align-items: center;
-align-items:baseline;
-    flex-direction: row;
+.footer-block  {
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 15px;
+   width: 1200px;
+   display: flex;
+   align-items:baseline;
+    
 }
