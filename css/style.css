@@ -174,7 +174,7 @@ width: 161px;
 .item-mail {
     width: 161px;
     margin-right: 30px;
-    display: flex;
+    display: inline-block;
 }
 .item-tel {
     width: 142px;
@@ -470,17 +470,46 @@ background-color: var(--accent-color-2);}
     margin-left: 32px;
     margin-bottom: 30px;
     justify-content: space-between;
-     width: 206px;
-     
-}
- .social-links {
-width: 44px;
-height: 44px;
-fill: #AFB1B8; }
+     width: 206px; 
+    }
+
   
-  .social-links:hover {
-  fill:  var(--accent-color-2);
- }
+ .social-links {
+width: 20px;
+height: 20px;
+fill: currentColor;               
+display: inline-flex;
+background-position: center;
+display:inline-block;
+justify-content: center;
+ background-repeat: no-repeat;
+}
+
+
+     .icon-card {
+         display: inline;
+         background-position: 50% 50%;
+        }
+
+     .icon-hover {
+         padding: 0;
+         border:none;
+         display: inline-block;
+         width: 44px;
+         height: 44px;
+         border-radius: 50%;
+        
+         color:#AFB1B8;   
+         background-size: 20px;
+          }
+
+    .icon-hover:hover{
+    background-color: var(--accent-color); }
+
+    .social-links:hover {
+     fill:  #FFFFFF; }
+
+     
 
  .social-links-insta  {
      display: inline-flex;
@@ -730,5 +759,12 @@ footer .container {
    display: flex;
    align-items:baseline;}
 
+   .social-footer {
+    display:inline-block;
+    
+    justify-content: space-between;
+     width: 206px; 
+     
+}
 
  
