@@ -150,11 +150,11 @@ margin: 0;
     display: flex;
 }
 
-.icon-tel:hover ,
+/*.icon-tel:hover ,
 .icon-mail:hover ,
 .icon-mail:focus ,
 .icon-tel:focus {
-    fill: var(--accent-color);}
+    fill: var(--accent-color);}*/
 
 .icons {
 width: 161px;
@@ -397,34 +397,43 @@ background-color: var(--accent-color-2);}
     flex-wrap: wrap;
     justify-content: space-between;
            }
+     .border-client {
+         display: inline-block;
+         border-color: currentColor;  }
+
+.border-client:hover{
+color: #2196F3;
+         }
 
             .our-client {
                 width: 170px;
                 height: 90px;
-                display: inline-block;  
-                
-                border: 1px solid #AFB1B8;
+                display: flex;  
+                border: 1px solid  #AFB1B8; 
                 box-sizing: border-box;
                 border-radius: 4px;
-                margin-right: 15px;
-                   }
-        
+                margin-right: 15px; 
+                } 
+
+.our-client:hover, .our-client:hover svg { 
+            border-color: var(--accent-color3);
+           fill: #2196F3;}
+
+ .our-client:last-child {
+            margin-right: 0px;}
+
+ 
 .client-position {
     background-position: center;
     display: flex;
    }
-   .client-position:hover {
-    color: var(--accent-color);
-   }
-   .our-client:hover{
-    color: var(--accent-color);
-   }
-           .our-client:last-child {
-            margin-right: 0px;}
-
+ 
+  
         .yaCo {
          width: 45px;
         height: 50px;
+        display: flex;  
+
          }
          .company2 {
             width: 40px;
@@ -435,17 +444,13 @@ background-color: var(--accent-color-2);}
             height: 43px;}
 
          .company4 {width: 80px;
-            height: 42px;
+            height: 42px; }
 
-         }
          .company6 {width: 88px;
-            height: 45px;
-
-         }
+            height: 45px; }
         .brand {width: 59px;
-            height: 47px;
+            height: 47px;  } 
 
-        }
             .yaCo,
             .company2,
             .company3,
@@ -456,11 +461,12 @@ background-color: var(--accent-color-2);}
                 margin-right: auto;
                 margin-left: auto;
                 margin-top: 20px;  
-                fill: #AFB1B8;
-                       
-            }
-            .yaCo:hover ,
-            .company2:hover ,
+                fill: #AFB1B8;}
+               
+          
+                  
+            .yaCo:hover ,    
+           .company2:hover ,
             .company3:hover ,
             .company4:hover ,
             .brand:hover ,
@@ -468,9 +474,7 @@ background-color: var(--accent-color-2);}
                 fill: var(--accent-color);
             }
 
-           /* .our-client:hover {
-               color: #2196F3;}*/
-
+           
 .social{
     display:inline-block;
     margin-right: 32px;
@@ -480,43 +484,58 @@ background-color: var(--accent-color-2);}
      width: 206px; 
     }
 
-  
+    .social-link {
+        width: 44px;
+        height: 44px;
+        text-align: center;
+        display: inline-block;
+                
+         
+        }
+        .social-link .icon-hover {
+            display: flex;
+             justify-content: center;
+             align-items: center;
+             margin: 0 auto;
+             width: 44px;
+             height: 44px;
+             border-radius: 50%; }
+
+
  .social-links {
+display: flex;
 width: 20px;
 height: 20px;
-fill: currentColor;               
-display: inline-flex;
-background-position: center;
-display:inline-block;
-justify-content: center;
- background-repeat: no-repeat;
-}
+fill:  #AFB1B8;}
 
+ .social {
+     display: block; }
 
-     .icon-card {
-         display: inline;
-         background-position: 50% 50%;
-        }
-
-     .icon-hover {
+       .icon-hover {
          padding: 0;
          border:none;
-         display: inline-block;
+         display: block;
+         align-items: center;
+         justify-content: center;
          width: 44px;
          height: 44px;
          border-radius: 50%;
-        
+         background-position: 50% 50%;
          color:#AFB1B8;   
          background-size: 20px;
           }
 
-    .icon-hover:hover{
-    background-color: var(--accent-color); }
+   .icon-hover:hover, .social-links:hover {
+    background-color: var(--accent-color);
+    fill:  #fce5e5;
+ }
 
-    .social-links:hover {
-     fill:  #FFFFFF; }
-
-     
+    
+     .icon {
+display: inline-block; 
+width: 44px;
+height: 44px;
+     } 
 
  .social-links-insta  {
      display: inline-flex;
@@ -528,6 +547,7 @@ justify-content: center;
     border-radius: 50%;
     background-size: 20px;
     background-position: center;
+    object-position:center;
     background-repeat: no-repeat;
      }
      .social-links-insta:hover ,
@@ -535,6 +555,7 @@ justify-content: center;
      .social-links-facebook:hover ,
      .social-links-linki:hover {
         background-color: var(--accent-color);
+        fill:  #fce5e5; 
      }
 
      .social-links-twitter{
