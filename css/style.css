@@ -525,9 +525,9 @@ fill:  #AFB1B8;}
          background-size: 20px;
           }
 
-   .icon-hover:hover, .social-links:hover {
+   .icon-hover:hover, .icon-hover:hover svg {
     background-color: var(--accent-color);
-    fill:  #fce5e5;
+    fill: #FFFFFF;
  }
 
     
